@@ -1,0 +1,63 @@
+
+hr {
+
+    border: 1px solid #32323d;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+.certificateContent{
+    margin-top:15px;
+}
+.certificates {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    position: relative;
+}
+.certificateName{
+    margin-top: 15px;
+
+}
+.certificateContent p{
+    font-weight: 500;
+}
+
+
+.certificateContent ul li{
+      line-height: 1.4;
+        margin: 5px;
+}
+
+.certificateList{
+    margin-left: 10%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:   space-between;
+    list-style: none;
+}
+@media only screen and (max-width: 600px){
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    }
+    .certificateList{
+        align-items: center;
+        width: 100%;
+        margin:auto;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .certificateName{
+        margin-left: 30px;
+    }
+
+    .certificateContent{
+        margin-left: 0px;
+    }
+}
+
+

@@ -1,0 +1,121 @@
+
+hr {
+
+    border: 1px solid #32323d;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+#projectsSection {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.projectContent {
+  background-color: white;
+    margin: 25px;
+}
+
+
+.projectContent ul, .certificateContent {
+    margin-left: 5%;
+}
+
+
+.projectContent ul>:first-child{
+    font-size: 17px;
+}
+
+.projectContent ul li{
+    line-height: 1.4;
+    margin: 5px;
+}
+
+
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 24px;
+  padding-right: 48px;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  display: grid;
+  grid-template-columns:.1fr auto auto ;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ced4da;
+}
+.icon{
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.title,
+.icon {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.content-box {
+  grid-column: 2 / -1;
+  padding-bottom: 16px;
+  line-height: 1.6;
+}
+
+.content-box ul {
+  color: #868e96;
+  margin-left: 16px;
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* OPEN STATE */
+.open {
+  border-top: 4px solid #087f5b;
+  grid-template-columns:.1fr auto auto auto ;
+
+}
+
+.open .number,
+.open .title {
+  color: #087f5b;
+}
+
+@media only screen and (max-width: 600px){
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    }
+    .open {
+  border-top: 4px solid #087f5b;
+  grid-template-columns:auto;
+
+}
+}
+
+

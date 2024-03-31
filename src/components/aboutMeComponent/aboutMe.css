@@ -1,0 +1,143 @@
+
+
+
+#aboutMeSection {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+#aboutMeSection h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #32323d;
+}
+#personOnPC {
+    width: 250px;
+    height: 250px;
+
+}
+#aboutMe p{
+    width: 100%;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+#aboutMeTitle .personalLinkIcons{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+#aboutMeTitle{
+    display: flex;
+align-items: center;    
+}
+
+#aboutMeTitle span{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.aboutMeSectionLinks{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMeSectionLinks ul{
+    list-style: none;
+    display: flex;
+    
+   
+}
+
+.personalLinkIcons{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.aboutMeSectionLinks ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    
+    }
+    #personalInfo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+       
+    }
+    #personalInfo h3{
+        text-align: center;
+    }
+    #aboutMeSection {
+        flex-wrap: wrap;
+    }
+    #aboutMeSection img{
+        width: 100%;
+        height: min-content;
+    }
+    #aboutMe p {
+        width: 100%;
+        margin: 0 0;
+    }
+     #aboutMe h2 {
+        margin-top: 20px;
+    }
+    #aboutMeTitle{
+        display: flex; 
+        flex-direction: column;
+    }
+    #aboutMeTitle span{
+        margin-bottom: 10px;
+    }
+    .aboutMeSectionLinks ul{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+     .aboutMeSectionLinks ul li{
+        margin:10px;
+        width: 100%;
+        
+        
+    }
+
+}
+
+

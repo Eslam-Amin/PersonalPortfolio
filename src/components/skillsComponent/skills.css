@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-justify: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    background-color: #32323d ;
+    height: 90px;
+
+}
+
+
+
+
+.square{
+    width: 60px;
+height: 60px;
+background-color: #4e6bff;
+opacity: 0.7;
+position: absolute;
+top: -60;
+left: -60;
+z-index: -1;
+animation: square 25s linear alternate infinite;
+}
+
+@keyframes square {
+    to{
+        transform: translate(100vw, 100vh);
+    }
+
+    
+}
+
+.circle{
+    
+width: 100px;
+height: 100px;
+background-color: #ff97af;
+position: absolute;
+top: 200px;
+left: -100px;
+z-index: -1;
+border-radius: 50%;
+animation: circle 25s linear alternate infinite;
+}
+
+
+@keyframes circle {
+    to{
+        transform: translate(100vw, -100vh);
+    }
+
+}
+
+.rectangle{
+    
+width: 50px;
+height: 100px;
+background-color: #669966;
+position: absolute;
+top: 400px;
+left: -50px;
+z-index: -1;
+opacity: .5;
+animation: rect 25s linear alternate infinite;
+}
+
+
+@keyframes rectangle {
+    to{
+        transform: translate(100vw, -50vh);
+    }
+
+
+}
+
+#personalInfo {
+    width: 75%;
+    margin-left: 50px;
+    align-self: center;
+    color: beige;
+    overflow: hidden;
+}
+
+#personalInfo h3{
+   font-size: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info img {
+    width: 15px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.info p {
+    font-size: 15px;
+}
+
+#pageTabs {
+    float: right;
+    width: 60%;
+    align-self: center;
+
+}
+
+#pageTabs a {
+    margin: 20px;
+    color: beige;
+    text-decoration: none;
+}
+
+
+#pageTabs a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+#aboutMeSection {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-items: center;
+
+}
+
+#aboutMeSection h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #32323d;
+}
+
+#aboutMeSection img {
+    width: 250px;
+    height: 250px;
+
+}
+#aboutMe p{
+    width: 100%;
+    margin-left: 25px;
+    line-height: 1.5;
+
+}
+
+
+.aboutMeSectionLinks{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMeSectionLinks ul{
+    list-style: none;
+    display: flex;
+    
+   
+}
+
+.aboutMeSectionLinks img{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.aboutMeSectionLinks ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    
+}
+
+
+
+hr {
+
+    border: 1px solid #32323d;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+
+
+#skillsSection {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#skillCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skillCard {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: .5px solid #32323d;
+    margin: 10px;
+    margin-bottom: 25px;
+    box-shadow: -3px 5px 8px #888888;
+    align-items: flex-start;
+}
+.skillCardItem {
+    display: flex;
+}
+
+.skillCardItem img {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.skillCardItem p {
+    margin: 10px 5px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    }
+    #skillCard{
+        justify-content: center;
+    }
+    .skillCardItem{
+        margin-left:20%;
+    }
+    .skillCard{
+        width: 50%;
+ 
+    }
+}
+
+

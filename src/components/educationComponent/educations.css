@@ -1,0 +1,20 @@
+
+#educationSection {
+    margin: auto;
+    width: 75%;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+#educationContent{
+    margin: 25px;
+}
+
+ul{
+    margin-left: 5%;
+}
+
+li{
+    font-size: 17px;
+}

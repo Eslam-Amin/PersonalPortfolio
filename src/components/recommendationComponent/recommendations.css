@@ -1,0 +1,130 @@
+#recommendationsSection {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    height: 90%;   
+}
+
+#recommendCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.recommendCard {
+    width: 25%;
+    border: 1px solid #32323d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+
+.recommendCard p{
+    font-style: italic;
+}
+
+.recommendCard p:before {
+    content: open-quote;
+}
+
+.recommendCard p:after {
+    content: close-quote;
+}
+
+.recommendCard h5{
+    padding: 5px;
+    
+
+}
+#leaveRecommendationSection{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+#leaveRecommendationSection input{
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid #32323d;
+}
+
+#leaveRecommendationSection h2{
+margin-bottom: 10px;
+}
+
+#leaveRecommendationSection textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid #32323d;
+
+
+}
+
+#leaveRecommendationSection button{
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #32323d;
+    font-weight: bold;
+    border:1px solid #32323d;
+    margin-bottom: 50px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.alert{
+    position:fixed;
+    top:50%;
+    left:50%;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 10px 5px 0 #000022;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    transform: translateX(-50%);
+    background-color : #32323d;
+    color: beige;
+}
+.alert button{
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    padding :5px;
+}
+@media only screen and (max-width: 600px){
+    #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
+        width: 90%;
+    }
+    #projectsSection h2,#skillsSection h2, .certificates h2 ,#recommendationsSection h2{
+        text-align: center;
+    }
+    #recommendCard {
+        justify-content: center;
+    }
+    .recommendCard{
+        width: 80%;
+    }
+    #leaveRecommendationSection{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
