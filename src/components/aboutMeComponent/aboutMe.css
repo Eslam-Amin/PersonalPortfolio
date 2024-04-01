@@ -28,6 +28,8 @@ h2 {
     width: 100%;
     margin-left: 25px;
     line-height: 1.5;
+    text-align: justify;
+
 }
 #aboutMeTitle .personalLinkIcons{
     width: 15px;
@@ -115,7 +117,7 @@ align-items: center;
     #aboutMe p {
         width: 100%;
         margin: 0 0;
-    }
+        }
      #aboutMe h2 {
         margin-top: 20px;
     }
@@ -130,6 +132,7 @@ align-items: center;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-top: 10px;
     }
      .aboutMeSectionLinks ul li{
         margin:10px;

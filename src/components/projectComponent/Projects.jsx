@@ -6,7 +6,7 @@ let projects = [
     {
         name: "Social Network App",
         desc: "It's a MERN Stack Website with a UI of older Version of facebook, I Created this project from scratch.",
-        otherInfo: "I used Render to host my Server, and Netlify to deploy my website.",
+        otherInfo: "I used \"Render\" to host my Server, and \"Netlify\" to deploy my website.",
         functions: [
             "Auth Pages: Register, and Login.",
             "User Pages: Profile, and Feed/Timeline Page.",
@@ -14,7 +14,7 @@ let projects = [
             "Interactions: Follow/Unfollow a user, and Like/Dislike a post."
         ],
         usedTech: " HTML, CSS, ReactJs, Axios, NodeJs, MongoDB, ExpressJs, and Context Api.",
-        liveWebsite: "https://main--funny-crepe-a4bd78.netlify.app/",
+        liveWebsite: "https://social-media-network.netlify.app/",
         futureWork: [
             "Create CRUD functions of User data. [ ✅ ]",
             "Create Authentication and Authorization Middleware Using JWT.",
@@ -31,26 +31,26 @@ let projects = [
             "Sort Items in your List."
         ],
         usedTech: "HTML, CSS, ReactJS.",
-        liveWebsite: "https://eslam-amin.github.io/Personal-Portfolio/"
+        liveWebsite: "https://travellist-faraway.netlify.app/"
     },
     {
         name: "Personal Portfolio",
         desc: "My portfolio serves as a comprehensive representation of my skills and experiences, allowing potential employers to gain insight into my capabilities and assess my suitability for their needs. It enables me to stand out in a competitive job market, showcasing my unique talents and accomplishments in a visually appealing and engaging manner.",
         usedTech: "HTML, CSS, JavaScript, and ReactJs.",
-        liveWebsite: "https://enchanting-axolotl-565769.netlify.app/"
+        liveWebsite: "https://eslam-amin-portfolio.netlify.app/"
     },
     {
         name: "Book Store App",
-        desc: "It's A book store application using MERN Stack to create a simple UI integrating with an API connected with mongoDb. you can do CRUD operations on the Store only if your The Admin, I used Render to host my Server, and Netlify to deploy my website.",
+        desc: "It's A book store application using MERN Stack to create a simple UI integrating with an API connected with mongoDb. you can do CRUD operations on the Store only if your The Admin, I used \"Render\" to host my Server, and \"Netlify\" to deploy my website.",
         otherInfo: <b>Admin: (EslamAminAdmin).</b>,
         usedTech: "HTML, TailwindCSS, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB",
-        liveWebsite: "https://enchanting-axolotl-565769.netlify.app/"
+        liveWebsite: "https://bookstore-mernstack-app.netlify.app/"
     },
     {
         name: "Simple Agency React App",
         desc: "In the Learning Process of having react as a skill I created this beautiful UI React app to increase my knowledge with the technology.",
         usedTech: " HTML, CSS, JavaScript, And ReactJS.",
-        liveWebsite: "https://mellifluous-liger-79b2fd.netlify.app/"
+        liveWebsite: "https://simple-agency-app.netlify.app/"
     },
     {
         name: "Back-End Service",
@@ -148,8 +148,8 @@ function Project({ project, num, currentOpen, onOpen, children }) {
                                     <b>Future Work</b>
                                     <ul>
                                         {
-                                            project.futureWork.map(fWork =>
-                                                <li>
+                                            project.futureWork.map((fWork, index) =>
+                                                <li key={fWork + index}>
                                                     {fWork}
                                                 </li>)
                                         }

@@ -13,8 +13,19 @@ hr {
     margin: auto;
     width: 75%;
     margin-top: 50px;
-    position: relative;
+    
 }
+.certificateWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sliderArrows{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .certificateName{
     margin-top: 15px;
 
@@ -25,17 +36,50 @@ hr {
 
 
 .certificateContent ul li{
-      line-height: 1.4;
-        margin: 5px;
+    line-height: 1.4;
+    margin: 5px;
 }
 
 .certificateList{
-    margin-left: 10%;
+    margin-left:10%;
     width: 75%;
     display: flex;
     align-items: center;
     justify-content:   space-between;
     list-style: none;
+}
+
+.certificateSlider{
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+    list-style: none;
+    width: 90%;
+    overflow-x: scroll;
+    text-align: center;
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sliderItem{
+    margin: 10px 25px;
+}
+
+.sliderItem span{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px;
+
+}
+
+.sliderImg{
+    height: 450px;
+    width: 70vw;
+    object-fit: contain;
+    border-radius: 15px;
+
 }
 @media only screen and (max-width: 600px){
     #projectsSection ,#skillsSection, #recommendationsSection, .certificates{
@@ -58,6 +102,26 @@ hr {
     .certificateContent{
         margin-left: 0px;
     }
+
+
+    .certificateSlider{
+        height: auto;
+    }
+
+    .sliderItem{
+        margin: 10px 25px;
+    }
+
+    .sliderImg{
+        height: auto;
+        object-fit: contain;
+
+    }
+
+
+
+
+
 }
 
 

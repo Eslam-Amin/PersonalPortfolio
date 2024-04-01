@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+      scroll-behavior: smooth;
+
     text-justify: auto;
 }
 
@@ -77,4 +79,17 @@ animation: rectangle 25s linear alternate infinite;
     }
 
 
+}
+
+
+
+@media only screen and (max-width: 600px){
+    
+@keyframes square {
+    to{
+        transform: translate(100vw, 70vh);
+    }
+
+    
+}
 }

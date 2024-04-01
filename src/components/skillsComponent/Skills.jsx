@@ -53,7 +53,7 @@ let skills = {
             image: require("../../images/cSharp.png")
         },
         {
-            name: "Databases",
+            name: "MS SQL Server",
             image: require("../../images/database.png")
         },
     ],
