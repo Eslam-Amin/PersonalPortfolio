@@ -1,7 +1,6 @@
 
 hr {
 
-    border: 1px solid #32323d;
     width: 50%;
     margin: auto;
     margin-top: 25px;
@@ -51,9 +50,9 @@ hr {
   padding: 20px 24px;
   padding-right: 48px;
   cursor: pointer;
-  border-top: 4px solid #76ABAE;
+  border-top: 4px solid #3F4E4F;
 
-  border-bottom: 4px solid #76ABAE;
+  border-bottom: 4px solid #3F4E4F;
   display: grid;
   grid-template-columns:.1fr auto auto ;
   column-gap: 24px;

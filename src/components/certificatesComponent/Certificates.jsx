@@ -76,7 +76,7 @@ let certificatesData = [
 
 function Certificates() {
     return (
-        <div className="certificates" id="certifications">
+        <div className="certificates" id="certificates">
 
             <h2>Certificates</h2>
             <ul className="certificateSlider">

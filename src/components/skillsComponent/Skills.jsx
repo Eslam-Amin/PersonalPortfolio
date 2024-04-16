@@ -45,7 +45,7 @@ let skills = {
     ],
     otherTech: [
         {
-            name: "Docker (Basics)",
+            name: "Docker",
             image: require("../../images/skills/docker.png")
         },
         {
@@ -72,7 +72,7 @@ function Skills() {
             <h2>Skills</h2>
 
             <div id="skillCard">
-                <div className="skillCard">
+                <div className="skillCard leftCard">
                     <h4>Basic Stack</h4>
 
                     {
@@ -89,7 +89,7 @@ function Skills() {
                         )
                     }
                 </div>
-                <div className="skillCard">
+                <div className="skillCard rightCard">
                     <h4>Other Technologies</h4>
 
                     {

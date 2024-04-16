@@ -1,6 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Press+Start+2P&display=swap');
 #aboutMeSection {
     display: flex;
     width: 75%;
@@ -12,9 +13,19 @@
 }
 
 #aboutMeSection h2{
-    font-size: 2rem;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: "Jersey 20", sans-serif;
+
+
 }
 
+.infoWrapper{
+    display: none;
+}
 #personOnPC {
     width: 250px;
     height: 250px;
@@ -36,15 +47,17 @@
 
 #aboutMeTitle{
     display: flex;
-align-items: center;    
-gap: 5px;
+    align-items: center;    
+    gap: 5px;
 
 }
 
 #aboutMeTitle span{
     font-size: 12px;
     margin-top: 10px;
+
 }
+
 
 .aboutMeSectionLinks{
     display: flex;
@@ -54,6 +67,7 @@ gap: 5px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 25px;
 }
 
 .aboutMeSectionLinks ul{
@@ -80,18 +94,24 @@ gap: 5px;
     font-size: 30px;
     align-items: center;
     text-transform: uppercase;
-    color: #32323d;
 }
 
 .headerSpan :first-child{
     color: #d8a720;
     font-weight: bold;
+ font-family: "Press Start 2P", system-ui;
+ font-size: 30px;
     
 }
 #aboutMeTitle .headerSpan{
     font-size: 20px;
     margin: 0;
     text-transform: capitalize;
+}
+
+.personalLinkIcons{
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -107,6 +127,16 @@ gap: 5px;
         text-align: center;
     
     }
+    
+#aboutMeSection h2{
+   
+    margin-left: 0px;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+
+}
     #personalInfo{
         width: 100%;
         display: flex;
@@ -121,10 +151,6 @@ gap: 5px;
     }
     #aboutMeSection {
         flex-wrap: wrap;
-    }
-    #aboutMeSection img{
-        width: 100%;
-        height: min-content;
     }
     #personOnPC{
         display: none;
@@ -152,17 +178,50 @@ gap: 5px;
         margin-bottom: 10px;
 
     }
+    #headerSpan{
+        word-spacing: 1rem;
+        letter-spacing: 4px;
+    }
+    
+.aboutMeSectionLinks{
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
     .aboutMeSectionLinks ul{
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
         margin-top: 10px;
+        width: 100%;
+        justify-content: space-evenly;
     }
      .aboutMeSectionLinks ul li{
-        margin:10px;
+        margin:5px;
         width: 100%;        
     }
     
+.infoWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+.infoImg{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    }
+    .infoContact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px;
+
+    }
+    .mail{
+        width: 100%;
+        height: 45px;
+    }
 }
 
 

@@ -4,25 +4,36 @@
       scroll-behavior: smooth;
 
     text-justify: auto;
+    color:#DCD7C9
 }
 
 html{
     overflow-x: hidden;
     /* background-color: #31363F; */
     /* background-color: #252526; */
-    
     /* color: #EEEEEE; */
 }
 h2{
-    color:#32323d
+    color:#A27B5C
 }
+
+body{
+    background-color: #2C3639;
+}
+a{    color: #DCD7C9;
+}
+
 hr {
 
-    border: 1px solid #32323d;
+    border: 1px solid #000000;
     width: 50%;
     margin: auto;
     margin-top: 25px;
 }
+/* 
+
+
+
 
 
 .square{
@@ -94,9 +105,11 @@ animation: rectangle 25s linear alternate infinite;
     
 @keyframes square {
     to{
-        transform: translate(100vw, 40vh);
+        transform: translate(90vw, 25vh);
     }
 
     
 }
 }
+
+*/

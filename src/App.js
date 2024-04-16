@@ -14,10 +14,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <AnimatedShapes />
       <AboutMe />
       <hr />
-
       <Skills />
       <hr />
       <Projects />
@@ -28,13 +26,5 @@ function App() {
 
   )
 }
-
-/*
- <Intro />
-        <IntroShape />
-
-<Feature />
-        <FeatureShape />
-*/
 
 export default App

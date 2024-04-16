@@ -5,7 +5,7 @@
 @media only screen and (max-width: 600px){
     display: block;
     position: fixed;
-    bottom: 25px;
+    bottom: 30px;
     z-index: 99;
     margin: 0;
     border-radius: 25px;
@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     height: 50px;
-    background-color:#76ABAE;
+    background-color:#3F4E4F;
     }
 }
 .navImgSplitter{
@@ -43,7 +43,7 @@ nav {
     flex-direction: row;
     margin: 0 10px 10px 0;
     width: 100%;
-    background-color: #32323d ;
+    background-color: #3F4E4F ;
     height: 90px;
     
 }
@@ -69,8 +69,8 @@ nav {
 }
 
 .info img {
-    width: 15px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
 }
 
@@ -82,19 +82,20 @@ nav {
     float: right;
     width: 60%;
     align-self: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #pageTabs a {
     margin: 20px;
-    color: beige;
+    color: #DCD7C9;
     text-decoration: none;
 }
 
 
 #pageTabs a:hover {
     text-decoration: underline;
-    font-weight: bold;
 }
 
 

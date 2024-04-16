@@ -23,7 +23,13 @@
     align-items: flex-start;
     border-radius: 50px;
 }
+.leftCard{
+    box-shadow: -5px -0px 8px #888888;
+}
+.rightCard{
+    box-shadow: 5px 0px 8px #888888;
 
+}
 .mernStack{
     transform: scale(1.1);
     
@@ -71,6 +77,14 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
         width: 50%;
  
     }
+    
+.leftCard{
+    box-shadow: 0px -5px 8px #888888;
+}
+.rightCard{
+    box-shadow: 0px 5px 8px #888888;
+
+}
 }
 
 
