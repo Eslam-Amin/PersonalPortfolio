@@ -13,12 +13,8 @@
 
 #aboutMeSection h2{
     font-size: 2rem;
-    margin-bottom: 10px;
 }
 
-h2 {
-    color: #32323d;
-}
 #personOnPC {
     width: 250px;
     height: 250px;
@@ -41,6 +37,8 @@ h2 {
 #aboutMeTitle{
     display: flex;
 align-items: center;    
+gap: 5px;
+
 }
 
 #aboutMeTitle span{
@@ -78,9 +76,23 @@ align-items: center;
     padding: 0px 10px;
     
 }
+ .headerSpan{
+    font-size: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #32323d;
+}
 
-
-
+.headerSpan :first-child{
+    color: #d8a720;
+    font-weight: bold;
+    
+}
+#aboutMeTitle .headerSpan{
+    font-size: 20px;
+    margin: 0;
+    text-transform: capitalize;
+}
 
 
 
@@ -114,19 +126,31 @@ align-items: center;
         width: 100%;
         height: min-content;
     }
+    #personOnPC{
+        display: none;
+    }
+    #aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
     #aboutMe p {
         width: 100%;
         margin: 0 0;
-        }
+    }
      #aboutMe h2 {
-        margin-top: 20px;
+        margin-top: 0;
     }
     #aboutMeTitle{
         display: flex; 
         flex-direction: column;
     }
     #aboutMeTitle span{
+        margin: 0;
         margin-bottom: 10px;
+
     }
     .aboutMeSectionLinks ul{
         align-items: center;
@@ -136,11 +160,9 @@ align-items: center;
     }
      .aboutMeSectionLinks ul li{
         margin:10px;
-        width: 100%;
-        
-        
+        width: 100%;        
     }
-
+    
 }
 
 

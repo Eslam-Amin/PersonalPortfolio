@@ -1,5 +1,6 @@
 import "./aboutMe.css"
-import locationIcon from "../../images/Location_16px.png"
+import locationIcon from "../../images/Location.png"
+import githubIcon from "../../images/github.svg"
 
 let personalLinks = [
     {
@@ -9,7 +10,7 @@ let personalLinks = [
     },
     {
         text: "GitHub",
-        image: require("../../images/github.png"),
+        image: githubIcon,
         link: "https://github.com/Eslam-Amin",
     },
     {
@@ -28,8 +29,13 @@ function AboutMe() {
                 <img src={require("../../images/programmer.png")} alt="programmer" id="personOnPC" />
 
                 <div id="aboutMe">
+                    <span className="headerSpan">
+                        <strong>{"<Hello /> "}</strong>
+                    </span>
                     <div id="aboutMeTitle">
-                        <h2>Hi, I'm Eslam Amin</h2>
+
+                        <span className="headerSpan">my name is,</span>
+                        <h2>Eslam Amin</h2>
                         <span><img src={locationIcon} alt="location" className="personalLinkIcons" />
                             Cairo, Egypt</span>
                     </div>

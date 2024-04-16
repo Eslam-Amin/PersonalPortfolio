@@ -8,6 +8,13 @@
 
 html{
     overflow-x: hidden;
+    /* background-color: #31363F; */
+    /* background-color: #252526; */
+    
+    /* color: #EEEEEE; */
+}
+h2{
+    color:#32323d
 }
 hr {
 
@@ -32,7 +39,7 @@ animation: square 25s linear alternate infinite;
 
 @keyframes square {
     to{
-        transform: translate(100vw, 90vh);
+        transform: translate(100vw, 80vh);
     }
 
     
@@ -87,7 +94,7 @@ animation: rectangle 25s linear alternate infinite;
     
 @keyframes square {
     to{
-        transform: translate(100vw, 70vh);
+        transform: translate(100vw, 40vh);
     }
 
     

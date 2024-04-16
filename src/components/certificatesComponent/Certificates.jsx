@@ -120,9 +120,14 @@ function CertificateSlider({ certificate }) {
     return (
         <>
             <li className="sliderItem">
-                <img src={certificate.certificateImg} alt={certificate.name} className="sliderImg" />
+                <img
+                    src={certificate.certificateImg}
+                    alt={certificate.name}
+                    className="sliderImg"
+                    loading="eager" />
+
                 <span>Verify Here ➡️</span>
-                <a href={certificate.link}>Certificate</a>
+                <a href={certificate.link} target="blank">Certificate</a>
             </li>
         </>
     )

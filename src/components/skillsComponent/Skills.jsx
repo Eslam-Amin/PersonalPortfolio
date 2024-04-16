@@ -1,14 +1,14 @@
 import "./skills.css"
-import htmlImage from "../../images/HTML5_logo_and_wordmark.svg"
-import cssImage from "../../images/CSS.3.svg"
-import bootstrapImage from "../../images/Bootstrap.svg";
-import nodeJsImage from "../../images/Node.js.svg"
-import reactImage from "../../images/React.svg"
+import htmlImage from "../../images/skills/HTML5.svg"
+import cssImage from "../../images/skills/CSS.3.svg"
+import bootstrapImage from "../../images/skills/Bootstrap.svg";
+import nodeJsImage from "../../images/skills/Node.js.svg"
+import reactImage from "../../images/skills/React.svg"
 
 
 
 let skills = {
-    webDevelopment: [
+    basicStack: [
         {
             name: "HTML",
             image: htmlImage
@@ -19,42 +19,46 @@ let skills = {
         },
         {
             name: "JavaScript",
-            image: require("../../images/JavaScript.png")
+            image: require("../../images/skills/JavaScript.png")
         },
         {
             name: "Bootstrap",
             image: bootstrapImage
         },
-    ], mernStack: [
+    ], mainStack: [
         {
             name: "NodeJs",
             image: nodeJsImage
         },
         {
             name: "MongoDB",
-            image: require("../../images/mongoDB.png")
+            image: require("../../images/skills/mongoDB.png")
         },
         {
             name: "ExpressJS",
-            image: require("../../images/express.jpg")
+            image: require("../../images/skills/express.jpg")
         },
         {
             name: "ReactJS",
             image: reactImage
+        }
+    ],
+    otherTech: [
+        {
+            name: "Docker (Basics)",
+            image: require("../../images/skills/docker.png")
         },
         {
             name: "AxiosHTTP",
             image: "https://axios-http.com/assets/logo.svg"
-        }
-    ],
-    other: [
+        },
         {
             name: "C#",
-            image: require("../../images/cSharp.png")
+            image: require("../../images/skills/cSharp.png")
         },
         {
             name: "MS SQL Server",
-            image: require("../../images/database.png")
+            image: require("../../images/skills/database.png")
         },
     ],
 }
@@ -69,22 +73,27 @@ function Skills() {
 
             <div id="skillCard">
                 <div className="skillCard">
+                    <h4>Basic Stack</h4>
+
                     {
-                        skills.webDevelopment.map(skill =>
+                        skills.basicStack.map(skill =>
+                            <Skill skill={skill} key={skill.name} />
+                        )
+                    }
+                </div>
+                <div className="skillCard mernStack">
+                    <h4>Main Stack</h4>
+                    {
+                        skills.mainStack.map(skill =>
                             <Skill skill={skill} key={skill.name} />
                         )
                     }
                 </div>
                 <div className="skillCard">
+                    <h4>Other Technologies</h4>
+
                     {
-                        skills.mernStack.map(skill =>
-                            <Skill skill={skill} key={skill.name} />
-                        )
-                    }
-                </div>
-                <div className="skillCard">
-                    {
-                        skills.other.map(skill =>
+                        skills.otherTech.map(skill =>
                             <Skill skill={skill} key={skill.name} />
                         )
                     }

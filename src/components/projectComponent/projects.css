@@ -17,7 +17,7 @@ hr {
 }
 
 .projectContent {
-  background-color: white;
+  background-color: inherit;
     margin: 25px;
 }
 
@@ -51,8 +51,9 @@ hr {
   padding: 20px 24px;
   padding-right: 48px;
   cursor: pointer;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-top: 4px solid #76ABAE;
+
+  border-bottom: 4px solid #76ABAE;
   display: grid;
   grid-template-columns:.1fr auto auto ;
   column-gap: 24px;
@@ -115,6 +116,9 @@ hr {
   border-top: 4px solid #087f5b;
   grid-template-columns:auto;
 
+}
+h3{
+  font-size: 17px;
 }
 }
 

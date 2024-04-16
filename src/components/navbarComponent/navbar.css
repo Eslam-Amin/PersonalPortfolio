@@ -1,4 +1,43 @@
 
+.navbarMobile{
+    display: none;
+
+@media only screen and (max-width: 600px){
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    z-index: 99;
+    margin: 0;
+    border-radius: 25px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 50px;
+    background-color:#76ABAE;
+    }
+}
+.navImgSplitter{
+    width:15px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.imgWrapper{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px;
+}
+
+.navImg{
+    width:33px;
+    z-index: 99;
+}   
+
 nav {
     display: flex;
     flex-direction: row;
@@ -6,6 +45,7 @@ nav {
     width: 100%;
     background-color: #32323d ;
     height: 90px;
+    
 }
 
 
@@ -14,7 +54,7 @@ nav {
     width: 75%;
     margin-left: 50px;
     align-self: center;
-    color: beige;
+    color: rgb(204, 204, 204);
     overflow: hidden;
 }
 
@@ -70,10 +110,7 @@ nav {
     }
     
     .navbar{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       display: none;
     }
     #personalInfo{
         width: 100%;

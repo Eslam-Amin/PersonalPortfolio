@@ -6,10 +6,15 @@ footer {
     width: 100%;
     background-color: #32323d ;
     height: 70px;
+    
+@media only screen and (max-width: 600px){
+    height: 25px;
+    margin: 0;
+    }
 }
 
 footer h4{
-    color: rgb(145, 145, 128);
+    color: rgb(204, 204, 204);
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;

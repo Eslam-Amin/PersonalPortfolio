@@ -7,6 +7,7 @@ import Skills from "./components/skillsComponent/Skills"
 import Certificates from "./components/certificatesComponent/Certificates"
 import Footer from "./components/footer/Footer"
 import Recommendations from "./components/recommendationComponent/Recommendations"
+import Quote from "./components/quoteComponent/Quote"
 
 
 function App() {
@@ -16,14 +17,12 @@ function App() {
       <AnimatedShapes />
       <AboutMe />
       <hr />
+
       <Skills />
       <hr />
       <Projects />
       <hr />
-
       <Certificates />
-      <hr />
-      <Recommendations />
       <Footer />
     </>
 

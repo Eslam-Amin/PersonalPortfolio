@@ -22,15 +22,25 @@ let projects = [
         ]
     },
     {
+        name: "Classy Weather",
+        desc: "It's a React App to get Today's Weather From an Api.",
+        otherInfo: "This app was Built with a class component",
+        functions: [
+            "fetch Week's Weather From Open-Meteo Api"
+        ],
+        usedTech: "HTML, CSS, JavaScript, ReactJS, and localStorage.",
+        liveWebsite: "https://classy-weather-ui.netlify.app/"
+    },
+    {
         name: "Travel List",
         desc: "It's a React App to write down what you'll need in a vacation.",
         functions: [
-            "Add new Item to your List.",
+            "Add new Item to your List, and save it to your Storage.",
             "Check on the items you packed.",
             "Delete What you don't need.",
             "Sort Items in your List."
         ],
-        usedTech: "HTML, CSS, ReactJS.",
+        usedTech: "HTML, CSS, JavaScript, ReactJS, and localStorage.",
         liveWebsite: "https://travellist-faraway.netlify.app/"
     },
     {
