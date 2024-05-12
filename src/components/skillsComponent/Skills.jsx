@@ -1,71 +1,40 @@
 import "./skills.css"
-import htmlImage from "../../images/skills/HTML5.svg"
-import cssImage from "../../images/skills/CSS.3.svg"
-import bootstrapImage from "../../images/skills/Bootstrap.svg";
-import nodeJsImage from "../../images/skills/Node.js.svg"
-import reactImage from "../../images/skills/React.svg"
 
-
-
-let skills = {
-    basicStack: [
-        {
-            name: "HTML",
-            image: htmlImage
-        },
-        {
-            name: "CSS",
-            image: cssImage
-        },
-        {
-            name: "JavaScript",
-            image: require("../../images/skills/JavaScript.png")
-        },
-        {
-            name: "Bootstrap",
-            image: bootstrapImage
-        },
-    ], mainStack: [
-        {
-            name: "NodeJs",
-            image: nodeJsImage
-        },
-        {
-            name: "MongoDB",
-            image: require("../../images/skills/mongoDB.png")
-        },
-        {
-            name: "ExpressJS",
-            image: require("../../images/skills/express.jpg")
-        },
-        {
-            name: "ReactJS",
-            image: reactImage
-        }
-    ],
-    otherTech: [
-        {
-            name: "Docker",
-            image: require("../../images/skills/docker.png")
-        },
-        {
-            name: "AxiosHTTP",
-            image: "https://axios-http.com/assets/logo.svg"
-        },
-        {
-            name: "C#",
-            image: require("../../images/skills/cSharp.png")
-        },
-        {
-            name: "MS SQL Server",
-            image: require("../../images/skills/database.png")
-        },
-    ],
-}
-
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../../firebase"
+import { useState } from "react"
+import { useEffect } from "react"
+import Loader from "../loader/Loader"
+const colRef = collection(db, "skills");
 
 function Skills() {
+    const [skills, setSkills] = useState()
+    const [loading, setLoading] = useState(false)
+    let personalSkills = [];
 
+    useEffect(() => {
+        const fetchSkills = async () => {
+            setLoading(true)
+
+            try {
+
+                const snapshot = await getDocs(colRef)
+
+                snapshot.docs.forEach((doc) => {
+                    personalSkills.push({ ...doc.data(), id: doc.id })
+                    setSkills(personalSkills[0])
+                }
+                )
+            }
+            catch (err) {
+                console.log(err);
+            }
+            finally {
+                setLoading(false)
+            }
+        }
+        fetchSkills();
+    }, [])
     return (
 
         <div id="skillsSection">
@@ -74,30 +43,40 @@ function Skills() {
             <div id="skillCard">
                 <div className="skillCard leftCard">
                     <h4>Basic Stack</h4>
-
                     {
-                        skills.basicStack.map(skill =>
-                            <Skill skill={skill} key={skill.name} />
-                        )
+                        loading ?
+                            <Loader />
+                            :
+
+                            skills?.basicStack.map(skill =>
+                                <Skill skill={skill} key={skill.name} />
+                            )
                     }
                 </div>
                 <div className="skillCard mernStack">
                     <h4>Main Stack</h4>
                     {
-                        skills.mainStack.map(skill =>
-                            <Skill skill={skill} key={skill.name} />
-                        )
+                        loading ?
+                            <Loader />
+                            :
+                            skills?.mainStack.map(skill =>
+                                <Skill skill={skill} key={skill.name} />
+                            )
                     }
                 </div>
                 <div className="skillCard rightCard">
                     <h4>Other Technologies</h4>
 
                     {
-                        skills.otherTech.map(skill =>
-                            <Skill skill={skill} key={skill.name} />
-                        )
+                        loading ?
+                            <Loader />
+                            :
+                            skills?.otherStack.map(skill =>
+                                <Skill skill={skill} key={skill.name} />
+                            )
                     }
                 </div>
+
             </div>
 
         </div>

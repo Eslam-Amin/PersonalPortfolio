@@ -24,10 +24,10 @@
     border-radius: 50px;
 }
 .leftCard{
-    box-shadow: -5px -0px 8px #888888;
+    box-shadow: -7px -0px 8px #000;
 }
 .rightCard{
-    box-shadow: 5px 0px 8px #888888;
+    box-shadow: 7px 0px 8px #000;
 
 }
 .mernStack{
@@ -35,7 +35,7 @@
     
 -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.75);
 }
 
 
@@ -79,10 +79,10 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
     }
     
 .leftCard{
-    box-shadow: 0px -5px 8px #888888;
+    box-shadow: 0px -5px 8px #000;
 }
 .rightCard{
-    box-shadow: 0px 5px 8px #888888;
+    box-shadow: 0px 5px 8px #000;
 
 }
 }

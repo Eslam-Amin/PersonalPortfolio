@@ -126,8 +126,9 @@ function CertificateSlider({ certificate }) {
                     className="sliderImg"
                     loading="eager" />
 
-                <span>Verify Here ➡️</span>
-                <a href={certificate.link} target="blank">Certificate</a>
+                <a href={certificate.link} target="blank">
+                    <span>Verify</span>
+                </a>
             </li>
         </>
     )

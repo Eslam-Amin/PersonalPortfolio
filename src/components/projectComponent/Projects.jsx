@@ -46,7 +46,7 @@ let projects = [
     {
         name: "Personal Portfolio",
         desc: "My portfolio serves as a comprehensive representation of my skills and experiences, allowing potential employers to gain insight into my capabilities and assess my suitability for their needs. It enables me to stand out in a competitive job market, showcasing my unique talents and accomplishments in a visually appealing and engaging manner.",
-        usedTech: "HTML, CSS, JavaScript, and ReactJs.",
+        usedTech: "HTML, CSS, JavaScript, ReactJs, and Firebase.",
         liveWebsite: "https://eslam-amin-portfolio.netlify.app/"
     },
     {

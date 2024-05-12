@@ -1,13 +1,21 @@
 import "./navbar.css"
-import { useState } from "react"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase"
+import { useState, useEffect } from "react"
 
-
+const colRef = doc(db, "cv", "cv");
 
 function Navbar() {
+    const [cvLink, setCvLink] = useState();
+    useEffect(() => {
 
-    const [selected, setSelected] = useState("#aboutMeSection");
-    function handleChange() {
-    }
+        getDoc(colRef)
+            .then((doc) => {
+                setCvLink(doc.data().link)
+            })
+            .catch(err => console.log(err));
+    }, [])
+
 
     return (
         <>
@@ -32,7 +40,7 @@ function Navbar() {
                         src={require("../../images/navbar/grey-line.png")}
                         alt=""
                         className="" />
-                    <a href="https://drive.google.com/file/d/1nCF_er7S3ojnwjp1_OY4g4SB6ePzqP9g/view?usp=sharing" target="blank">
+                    <a href={cvLink} target="blank">
                         CV
                     </a>
                 </div>
@@ -70,7 +78,7 @@ function Navbar() {
                         src={require("../../images/navbar/line.png")}
                         alt=""
                         className="navImgSplitter" />
-                    <a href="https://drive.google.com/file/d/1guVeIjtcrG0lM_vd2pnpP3UVTShQLkgX/view?usp=drive_link" target="blank">
+                    <a href={cvLink} target="blank">
                         <img
                             src={require("../../images/navbar/cv.png")}
                             alt=""

@@ -1,25 +1,35 @@
 import "./aboutMe.css"
 import locationIcon from "../../images/Location.png"
-import githubIcon from "../../images/github.svg"
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../../firebase"
+import { useState } from "react"
+import { useEffect } from "react"
 
-let personalLinks = [
-    {
-        text: "LinkedIn",
-        image: require("../../images/LinkedIn.png"),
-        link: "https://www.linkedin.com/in/eslam-amin-610/",
-    },
-    {
-        text: "GitHub",
-        image: githubIcon,
-        link: "https://github.com/Eslam-Amin",
-    },
-    {
-        text: "HackerRank",
-        image: require("../../images/HackerRank.png"),
-        link: "https://www.hackerrank.com/profile/EslamAmin",
-    }
-]
+const colRef = collection(db, "personalLinks");
+
 function AboutMe() {
+    const [links, setLinks] = useState()
+
+    let personalLinks = [];
+
+    useEffect(() => {
+        const fetchLinks = async () => {
+            try {
+
+                const snapshot = await getDocs(colRef)
+
+                snapshot.docs.forEach((doc) => {
+                    personalLinks.push({ ...doc.data(), id: doc.id })
+
+                    setLinks(personalLinks)
+                })
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+        fetchLinks();
+    }, [])
 
     return (
         <>
@@ -36,21 +46,12 @@ function AboutMe() {
 
                         <span className="headerSpan" id="headerSpan">my name is</span>
                         <h2>Eslam Amin</h2>
-                        <span><img src={locationIcon} alt="location" className="personalLinkIcons" />
-                            Cairo, Egypt</span>
+                        <span>
+                            <img src={locationIcon} alt="location" className="personalLinkIcons" />
+                            Cairo, Egypt
+                        </span>
                     </div>
-                    {/* {
-      <div className="infoWrapper">
-                        <div className="info">
-                            <img src={require("../../images/mail.png")} alt="Mail" className="infoImg" />
-                            <p> ea.eslamamin@gmail.com</p>
-                        </div>
-                        <div className="info">
-                            <img src={require("../../images/phone.png")} alt="Mail" className="infoImg" />
-                            <p> (+20) 1099007326</p>
-                        </div>
-                    </div>
-} */}
+
                     <p>
                         I am a software engineer; I am enthusiast about programming and development. I love coding with Python,
                         C++ to solve
@@ -67,7 +68,7 @@ function AboutMe() {
             <div className="aboutMeSectionLinks">
                 <ul>
                     {
-                        personalLinks.map(link =>
+                        links?.map(link =>
                             <PersonalLink link={link} key={link.text} />
                         )
                     }
