@@ -2,7 +2,7 @@
 
 # Personal Portfolio - Eslam Amin
 
-Welcome to my personal portfolio! This portfolio showcases my skills, projects, and experience as a Backend/MERN stack developer. Below you'll find information about the portfolio, setup instructions, technologies used, and future enhancements.
+Welcome to my personal portfolio! This portfolio showcases my skills, projects, experience, and certificates as a Backend/MERN stack developer. Below you'll find information about the portfolio, setup instructions, technologies used, and future enhancements.
 
 ## About Me
 
@@ -20,7 +20,7 @@ You can access my portfolio [here](https://eslam-amin-portfolio.netlify.app/).
 
 ## Setup Instructions
 
-As this is a static portfolio hosted on Netlify with data stored in Firebase, there are no specific setup instructions. Simply visit the portfolio link mentioned above to explore my projects, skills, and experience.
+As this is a static portfolio hosted on Netlify with data stored in Firebase, there are no specific setup instructions. Simply visit the portfolio link mentioned above to explore my projects, skills, experience, and certificates.
 
 ## Features
 
@@ -30,3 +30,16 @@ As this is a static portfolio hosted on Netlify with data stored in Firebase, th
 - **Skills and Expertise:**
   - Lists my skills and expertise in various technologies and tools.
   
+- **Experience:**
+  - Highlights my professional experience, including education, internships, and previous employment.
+  
+- **Certificates:**
+  - Showcases my certificates and achievements in relevant fields.
+
+## Future Enhancements
+
+To enhance my portfolio further, I plan to:
+
+- **Blog Section:**
+  - Incorporate a blog section to share my thoughts, insights, and experiences as a developer.
+ 
